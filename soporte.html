@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte</title>
+</head>
+<body>
+    <h1>Soporte y manuales</h1>
+
+    <p>Llená los datos para que revisemos tu máquina rápido.</p>
+
+    <form>
+        <p>
+            <label>Nombre del Tostadero o Cafetería:</label><br>
+            <input type="text" placeholder="Ej: Cafeteria Carlitos" required>
+        </p>
+
+        <!-- Correo de contacto -->
+        <p>
+            <label>Correo Electrónico:</label><br>
+            <input type="email" placeholder="Carlitos@correo.com" required>
+        </p>
+
+        <!-- Selección de la máquina -->
+        <p>
+            <label>¿Qué máquina falla?:</label><br>
+            <select required>
+                <option value="">-- Selecciona una opción --</option>
+                <option value="tostadora">Tostadora de Café</option>
+                <option value="molino">Molino de Café</option>
+                <option value="otro">Otro equipo</option>
+            </select>
+        </p>
+
+        <!-- Nivel de urgencia -->
+        <p>
+            <label>¿Qué tan urgente es?:</label><br>
+            <select required>
+                <option value="baja">Baja (Mantenimiento)</option>
+                <option value="media">Media (Falla un poco)</option>
+                <option value="alta">Crítica (Producción parada)</option>
+            </select>
+        </p>
+
+        <!-- Detalle del problema -->
+        <p>
+            <label>Contanos qué le pasa a la máquina:</label><br>
+            <textarea rows="4" cols="40" placeholder="Ej: No calienta el tambor..." required></textarea>
+        </p>
+
+        <!-- Botón para mandar -->
+        <p>
+            <button type="submit">Enviar Reporte</button>
+        </p>
+    </form>
+    
+</body>
+</html>
