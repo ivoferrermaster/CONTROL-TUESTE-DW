@@ -1,13 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Permite que la página se adapte correctamente a celulares -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+
+    <title>Catálogo de Máquinas</title>
+
+    <!-- CDN de Materialize CSS -->
+    <!-- Importa todos los estilos del framework -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+
+        /* Color de fondo general de la página */
+        body{
+            background-color: #f5f1eb;
+        }
+
+        /* Personalización del título */
+        h1{
+            color: #5d4037;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        /* Todas las imágenes tendrán la misma altura */
+        .card-image img{
+            height: 220px;
+
+            /* Evita que las imágenes se deformen */
+            object-fit: cover;
+        }
+
+        /* Clase propia para destacar el precio */
+        .precio{
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+    </style>
+
 </head>
 <body>
-    <h1>Aqui estara nuestro catalogo</h1>
 
-    
+    <!--
+        container:
+        Clase de Materialize que centra el contenido
+        y deja márgenes automáticos a los costados.
+    -->
+    <div class="container">
+
+        <!--
+            center-align:
+            Clase de Materialize para centrar texto.
+        -->
+        <h1 class="center-align">
+            Catálogo de Máquinas de Tueste
+        </h1>
+
+        <!--
+            row:
+            Crea una fila para trabajar con el sistema
+            de grillas responsive de Materialize.
+        -->
+        <div class="row">
+
+            <!-- ================================================== -->
+            <!-- CARD 1 -->
+            <!-- ================================================== -->
+
+            <!--
+                col = columna
+
+                s12:
+                ocupa las 12 columnas en celular.
+
+                m6:
+                ocupa 6 columnas en tablet.
+
+                l4:
+                ocupa 4 columnas en escritorio.
+
+                Resultado:
+                - Celular = 1 card por fila.
+                - Tablet = 2 cards por fila.
+                - PC = 3 cards por fila.
+            -->
+            <div class="col s12 m6 l4">
+
+                <!--
+                    card:
+                    Componente visual de Materialize
+                    para mostrar información agrupada.
+                -->
+                <div class="card">
+
+                    <!--
+                        card-image:
+                        Sección destinada a imágenes.
+                    -->
+                    <div class="card-image">
+
+                        <img src="https://goldenroaster.com/uploads/30-kg-industrial-coffee-roaster.min.png"
+                             alt="Máquina de tueste">
+
+                    </div>
+
+                    <!--
+                        card-content:
+                        Contenido principal de la tarjeta.
+                    -->
+                    <div class="card-content">
+
+                        <!--
+                            card-title:
+                            Estilo especial de Materialize
+                            para títulos dentro de cards.
+                        -->
+                        <span class="card-title">
+                            Tostadora Industrial
+                        </span>
+
+                        <p>
+                            Equipo utilizado para realizar
+                            el proceso de tostado de granos
+                            de café a gran escala.
+                        </p>
+
+                        <p class="precio">
+                            $4.500.000
+                        </p>
+
+                    </div>
+
+                    <!--
+                        card-action:
+                        Zona destinada a botones o enlaces.
+                    -->
+                    <div class="card-action">
+
+                        <!--
+                            btn:
+                            Clase de Materialize para botones.
+                        -->
+                        <a href="#" class="brown btn">
+                            Ver más
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================================== -->
+            <!-- CARD 2 -->
+            <!-- ================================================== -->
+
+            <div class="col s12 m6 l4">
+
+                <div class="card">
+
+                    <div class="card-image">
+
+                        <img src="https://img.magnific.com/fotos-premium/granos-cafe-recien-tostados-tostador-cafe-mezclan-cilindro-enfriamiento_158235-1250.jpg?w=360"
+                             alt="Tambor de tueste">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-title">
+                            Tambor de Tueste
+                        </span>
+
+                        <p>
+                            Sistema rotativo que distribuye
+                            uniformemente el calor durante
+                            el tostado del café.
+                        </p>
+
+                        <p class="precio">
+                            $3.200.000
+                        </p>
+
+                    </div>
+
+                    <div class="card-action">
+
+                        <a href="#" class="brown btn">
+                            Ver más
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================================== -->
+            <!-- CARD 3 -->
+            <!-- ================================================== -->
+
+            <div class="col s12 m6 l4">
+
+                <div class="card">
+
+                    <div class="card-image">
+
+                        <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13"
+                             alt="Controlador">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-title">
+                            Controlador de Tueste
+                        </span>
+
+                        <p>
+                            Permite monitorear temperatura,
+                            tiempo y calidad del proceso.
+                        </p>
+
+                        <p class="precio">
+                            $1.800.000
+                        </p>
+
+                    </div>
+
+                    <div class="card-action">
+
+                        <a href="#" class="brown btn">
+                            Ver más
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--
+        CDN de JavaScript de Materialize.
+
+        Se utiliza para componentes interactivos
+        como menús, modales, carruseles, etc.
+
+        En este ejemplo las cards funcionan igual
+        aunque no lo usemos, pero es buena práctica
+        incluirlo.
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
