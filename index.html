@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRoast - Equipamiento B2B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/components/comp.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <main class="contenedor-principal">
+        <section class="caja-bienvenida" id="sobre-nosotros">
+            <img src="Assets/img/ilustracion.jpg" alt="Ilustración café SmartRoast">
+            <div class="texto-bienvenida">
+                <h2>¿Quiénes somos y qué problema resolvemos?</h2>
+                <p>El café verde debe tostarse siguiendo una curva de tiempo y temperatura muy estricta. Si la temperatura sube o baja del rango ideal, el lote se quema o queda crudo.</p>
+                <p>En SmartRoast ayudamos a los tostaderos asociados y dueños de cafeterías que necesitan comprar nueva maquinaria moderna para no arruinar su producción.</p>
+            </div>
+        </section>
+
+        <section class="caja-soluciones">
+            <h2>Nuestras Soluciones B2B</h2>
+            <p>Ofrecemos equipamiento industrial de alta calidad y herramientas de control:</p>
+            <ul class="lista-cafe">
+                <li><b>Catálogo de Maquinaria:</b> Venta de tostadoras profesionales y molinos de alta gama.</li>
+                <li><b>Soporte Técnico:</b> Manuales y formularios para pedir servicio de reparación.</li>
+                <li><b>Módulo Validador:</b> Un sistema simple para anotar las temperaturas minuto a minuto y evitar alertas de peligro.</li>
+            </ul>
+        </section>
+
+        <div class="fila-doble" id="soporte">
+            <section class="caja-mediana">
+                <h3>
+                    <img src="Assets/svg/book-open.svg" class="icono-titulo" alt="Ícono Manuales"> 
+                    Manuales Técnicos
+                </h3>
+                <p>Descarga las guías oficiales para calibrar y cuidar tus máquinas:</p>
+                
+                <a href="Assets/docs/manual_tostadora_1kg.pdf" download="Manual_Tostadora_Compacta_1kg.pdf" class="link-descarga">
+                    <img src="Assets/svg/file-text.svg" class="icono-link" alt="Ícono Documento"> Manual - Tostadora Compacta 1kg (PDF)
+                </a>
+                <a href="Assets/docs/manual_molino_basico.pdf" download="Manual_Molino_Basico_Pro.pdf" class="link-descarga">
+                    <img src="Assets/svg/file-text.svg" class="icono-link" alt="Ícono Documento"> Manual - Molino Básico Pro (PDF)
+                </a>
+                <a href="Assets/docs/manual_tostadora_30kg.pdf" download="Manual_Tostadora_Industrial_30kg.pdf" class="link-descarga">
+                    <img src="Assets/svg/file-text.svg" class="icono-link" alt="Ícono Documento"> Manual - Tostadora Industrial 30kg (PDF)
+                </a>
+                <a href="Assets/docs/guia_curvas_tueste.pdf" download="Guia_Curvas_Tueste_Ideal.pdf" class="link-descarga">
+                    <img src="Assets/svg/book-open.svg" class="icono-link" alt="Ícono Guía"> Guía de Curvas de Temperatura Ideal (PDF)
+                </a>
+            </section>
+
+            <section class="caja-mediana">
+                <h3>¿Problemas con tu Maquinaria?</h3>
+                <p>Si tu equipo tiene fallas, inquietudes o necesitas asistencia urgente, avísanos de inmediato.</p>
+                <a href="views/soporte.html">
+                    <button class="boton-rojo">Abrir Formulario de Soporte</button>
+                </a>
+            </section>
+        </div>
+
+        <section class="caja-inferior">
+            <p>¿Buscas renovar el equipamiento de tu tostadero?</p>
+            <a href="views/catalogo.html">
+                <button class="boton-naranja">Ingresar al Catálogo de Productos</button>
+            </a>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        inyectarComponente('header-container', 'Assets/components/headerout.html');
+        inyectarComponente('footer-container', 'Assets/components/footer.html');
+    </script>
+</body>
+</html>
