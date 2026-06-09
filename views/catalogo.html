@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de maquinarias</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Assets/components/comp.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <main class="contenedor-principal">
+        <h1 class="centrar-texto">Catálogo</h1>
+        <p class="subtitulo">Catálogo de maquinaria utilizada en la producción y procesamiento de café.</p>
+
+        <h4 class="gama-titulo">Gama Baja</h4>
+        <div class="grilla-catalogo">
+            
+            <div class="tarjeta-producto">
+                <img src="../Assets/img/tostadora.jpg" alt="Tostadora">
+                <div class="tarjeta-cuerpo">
+                    <span class="badge-gama baja">Gama Baja</span>
+                    <h3 class="tarjeta-titulo">Tostadora Compacta 1kg</h3>
+                    <p>Ideal para cafeterías pequeñas y pruebas de tostado.</p>
+                    <p class="precio">$850.000</p>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal1">Ver más</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="../Assets/img/molino.jpg" alt="Molino">
+                <div class="tarjeta-cuerpo">
+                    <span class="badge-gama baja">Gama Baja</span>
+                    <h3 class="tarjeta-titulo">Molino Básico</h3>
+                    <p>Molienda uniforme para pequeños productores.</p>
+                    <p class="precio">$450.000</p>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal2">Ver más</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="../Assets/img/envasadora.jpg" alt="Envasadora">
+                <div class="tarjeta-cuerpo">
+                    <span class="badge-gama baja">Gama Baja</span>
+                    <h3 class="tarjeta-titulo">Envasadora Manual</h3>
+                    <p>Equipo económico para envasado en pequeñas cantidades.</p>
+                    <p class="precio">$320.000</p>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal3">Ver más</button>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="gama-titulo">Gama Media</h4>
+        <div class="grilla-catalogo">
+            
+            <div class="tarjeta-producto">
+                <img src="../Assets/img/tostadorasemi.jpg" alt="Tostadora Semi">
+                <div class="tarjeta-cuerpo">
+                    <span class="badge-gama media">Gama Media</span>
+                    <h3 class="tarjeta-titulo">Tostadora Semiindustrial 5kg</h3>
+                    <p>Ideal para negocios en expansión y producción continua.</p>
+                    <p class="precio">$2.100.000</p>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal4">Ver más</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="../Assets/img/enfriamiento.jpg" alt="Enfriamiento">
+                <div class="tarjeta-cuerpo">
+                    <span class="badge-gama media">Gama Media</span>
+                    <h3 class="tarjeta-titulo">Sistema de Enfriamiento</h3>
+                    <p>Reduce rápidamente la temperatura después del tueste.</p>
+                    <p class="precio">$1.300.000</p>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal5">Ver más</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="../Assets/img/tolva.jpg" alt="Tolva">
+                <div class="tarjeta-cuerpo">
+                    <span class="badge-gama media">Gama Media</span>
+                    <h3 class="tarjeta-titulo">Tolva de Alimentación</h3>
+                    <p>Facilita la carga y dosificación de granos verdes.</p>
+                    <p class="precio">$980.000</p>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal6">Ver más</button>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="gama-titulo">Gama Alta</h4>
+        <div class="grilla-catalogo">
+            
+            <div class="tarjeta-producto">
+                <img src="../Assets/img/tostadora2.jpg" alt="Tostadora Ind">
+                <div class="tarjeta-cuerpo">
+                    <span class="badge-gama alta">Gama Alta</span>
+                    <h3 class="tarjeta-titulo">Tostadora Industrial 30kg</h3>
+                    <p>Diseñada para producción intensiva y alta demanda.</p>
+                    <p class="precio">$8.500.000</p>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal7">Ver más</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="../Assets/img/linea.jpg" alt="Linea">
+                <div class="tarjeta-cuerpo">
+                    <span class="badge-gama alta">Gama Alta</span>
+                    <h3 class="tarjeta-titulo">Línea de Envasado</h3>
+                    <p>Sistema totalmente automatizado para grandes volúmenes.</p>
+                    <p class="precio">$15.500.000</p>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal8">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal1" class="modal-fondo">
+        <div class="modal-contenido">
+            <button class="btn-cerrar-modal">X</button>
+            <h2>Tostadora Compacta 1kg</h2>
+            <ul>
+                <li>Capacidad: 1kg por ciclo</li>
+                <li>Potencia: 1.5 kW</li>
+                <li>Control manual</li>
+                <li>Ideal para cafeterías</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal-fondo">
+        <div class="modal-contenido">
+            <button class="btn-cerrar-modal">X</button>
+            <h2>Molino Básico</h2>
+            <ul>
+                <li>Producción: 10kg/h</li>
+                <li>Motor: 0.75 HP</li>
+                <li>Molienda regulable</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal-fondo">
+        <div class="modal-contenido">
+            <button class="btn-cerrar-modal">X</button>
+            <h2>Envasadora Manual</h2>
+            <ul>
+                <li>Operación manual</li>
+                <li>Hasta 500 bolsas por día</li>
+                <li>Bajo mantenimiento</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal-fondo">
+        <div class="modal-contenido">
+            <button class="btn-cerrar-modal">X</button>
+            <h2>Tostadora Semiindustrial 5kg</h2>
+            <ul>
+                <li>Capacidad: 5kg</li>
+                <li>Control digital</li>
+                <li>Registro de curvas de tueste</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal-fondo">
+        <div class="modal-contenido">
+            <button class="btn-cerrar-modal">X</button>
+            <h2>Sistema de Enfriamiento</h2>
+            <ul>
+                <li>Ventilación forzada</li>
+                <li>Tiempo promedio: 3 minutos</li>
+                <li>Acero inoxidable</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal-fondo">
+        <div class="modal-contenido">
+            <button class="btn-cerrar-modal">X</button>
+            <h2>Tolva de Alimentación</h2>
+            <ul>
+                <li>Capacidad: 50kg</li>
+                <li>Dosificación automática</li>
+                <li>Compatible con tostadoras industriales</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal-fondo">
+        <div class="modal-contenido">
+            <button class="btn-cerrar-modal">X</button>
+            <h2>Tostadora Industrial 30kg</h2>
+            <ul>
+                <li>Capacidad: 30kg por ciclo</li>
+                <li>Potencia: 15 kW</li>
+                <li>Control PLC</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal-fondo">
+        <div class="modal-contenido">
+            <button class="btn-cerrar-modal">X</button>
+            <h2>Línea Automática de Envasado</h2>
+            <ul>
+                <li>Hasta 5000 bolsas/día</li>
+                <li>Pesaje automático y Sellado térmico</li>
+                <li>Control industrial</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="../script.js"></script>
+    <script>
+        inyectarComponente('header-container', '../Assets/components/headerin.html');
+        inyectarComponente('footer-container', '../Assets/components/footer.html');
+    </script>
+</body>
+</html>
