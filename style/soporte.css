@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8f5;
+    color: #3e2723;
+}
+
+.caja-formulario {
+    background-color: white;
+    border: 1px solid #d7ccc8;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.boton-volver {
+    background-color: #757575;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 0;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #5d4037;
+    margin-bottom: 40px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.boton-enviar {
+    background-color: #380e0e;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
