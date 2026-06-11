@@ -1,0 +1,47 @@
+.caja-formulario {
+    background-color: white;
+    border: 1px solid #d7ccc8;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input, .campo select, .campo textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.boton-volver {
+    background-color: #757575;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.boton-enviar {
+    background-color: #380e0e;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
