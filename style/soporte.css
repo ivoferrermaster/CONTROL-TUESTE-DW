@@ -21,19 +21,16 @@
     padding: 8px;
     border: 1px solid #cccccc;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 .boton-volver {
     background-color: #757575;
     color: white;
-    border: none;
     padding: 8px 15px;
-    text-decoration: none;
     font-size: 14px;
     display: inline-block;
     cursor: pointer;
-    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 .boton-enviar {
@@ -44,4 +41,5 @@
     padding: 12px;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
 }
