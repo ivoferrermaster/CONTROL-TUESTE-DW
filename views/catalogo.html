@@ -27,7 +27,7 @@
                     <h3 class="tarjeta-titulo">Tostadora Compacta 1kg</h3>
                     <p>Ideal para cafeterías pequeñas y pruebas de tostado.</p>
                     <p class="precio">$850.000</p>
-                    <button class="boton-rojo" data-target="modal1">Ver más</button>
+                    <button class="boton-rojo btn-abrir-modal" data-target="modal1">Ver más</button>
                     <button class="btn-carrito"
                             onclick="agregarAlCarrito('Tostadora Compacta 1kg', 850000)">
                             Agregar al carrito
@@ -247,12 +247,34 @@
         </div>
     </div>
 
+    <div id="carrito" class="carrito">
+
+        <div class="carrito-contenido">
+
+            <div class="carrito-header">
+                <h2>Carrito de compras</h2>
+                <button onclick="cerrarCarrito()">✖</button>
+            </div>
+
+            <ul id="lista-carrito">
+                <li>No hay productos.</li>
+            </ul>
+            <p id="total-carrito">
+                Total: $0
+            </p>
+
+        </div>
+
+    </div>
+
     <div id="footer-container"></div>
 
     <script src="../script.js"></script>
+    <script src="../carrito.js"></script>
     <script>
         inyectarComponente('header-container', '../Assets/components/headerin.html');
         inyectarComponente('footer-container', '../Assets/components/footer.html');
+    
     </script>
 </body>
 </html>
