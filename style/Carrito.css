@@ -1,0 +1,127 @@
+.icono-carrito{
+    position: fixed;
+    top: 2px;
+    right: 10px;
+    background: #b22222;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.btn-carrito{
+    width: 62%;
+    margin-top: 10px;
+    background: #c62828;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carrito-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#lista-carrito{
+    list-style:none;
+    padding:0;
+}
+
+#lista-carrito li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+.icono-carrito{
+    position:relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.icono-carrito img{
+    width: 28px;
+    height: 28px;
+    background: transparent;
+}
+
+#contador-carrito{
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.barra-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carrito{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.carrito-contenido{
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.carrito-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito-header button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#lista-carrito{
+    margin-top:20px;
+    list-style:none;
+    padding:0;
+}
+
+#lista-carrito li{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+.btn-eliminar{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
