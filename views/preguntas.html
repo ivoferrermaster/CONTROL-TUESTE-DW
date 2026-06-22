@@ -4,58 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas Frecuentes</title>
-
     <link rel="stylesheet" href="../style/preguntas.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../Assets/components/comp.css">
     <link rel="stylesheet" href="../style/Carrito.css">
 </head>
-
 <body>
 
-    
-    <header class="barra-superior">
-        <div class="marca">
-            <h1>SmartRoast</h1>
-        </div>
-
-        <nav class="menu">
-            <a href="../index.html">Inicio</a>
-            <a href="../index.html#sobre-nosotros">Sobre Nosotros</a>
-            <a href="soporte.html">Soporte Técnico</a>
-            <a href="catalogo.html" class="menu-boton">Ver Catálogo</a>
-
-            <div class="icono-carrito" onclick="abrirCarrito()">
-                <img src="../Assets/svg/shopping-cart.svg" alt="Carrito">
-                <span id="contador-carrito">0</span>
-            </div>
-        </nav>
-    </header>
-
+    <div id="header-container"></div>
 
     <section>
         <h2>Preguntas Frecuentes</h2>
 
         <h3 onclick="mostrar('rep1')">¿Cuánto tarda el servicio técnico?</h3>
-        <p id="rep1" style="display:none;">
-            El tiempo de respuesta es de 24 a 48 hs hábiles.
-        </p>
+            <p id="rep1" style="display:none;">
+                El tiempo de respuesta es de 24 a 48 hs hábiles.
+            </p>
 
         <h3 onclick="mostrar2('rep2')">¿Las máquinas tienen garantías?</h3>
-        <p id="rep2" style="display:none;">
-            Sí, todas nuestras máquinas cuentan con garantía oficial.
-        </p>
+            <p id="rep2" style="display:none;">
+                Sí, todas nuestras máquinas cuentan con garantía oficial.
+            </p>
 
         <h3 onclick="mostrar3('rep3')">¿Dónde puedo descargar los manuales técnicos?</h3>
-        <p id="rep3" style="display:none;">
-            Los manuales se encuentran disponibles en la sección Inicio.
-        </p>
+            <p id="rep3" style="display:none;">
+                Los manuales se encuentran disponibles en la sección Inicio.
+            </p>
 
         <h3 onclick="mostrar4('rep4')">¿Realizan mantenimientos preventivos?</h3>
-        <p id="rep4" style="display:none;">
-            Sí, ofrecemos planes de mantenimiento para empresas y cafeterías.
-        </p>
-
+            <p id="rep4" style="display:none;">
+                Sí, ofrecemos planes de mantenimiento para empresas y cafeterías.
+            </p>
         <hr>
 
         <p>¿No encontraste la respuesta que buscabas?</p>
@@ -67,16 +46,14 @@
         </div>
     </section>
 
-    
-    <footer class="pie-pagina">
-        <h5>SmartRoast</h5>
-        <p>Monitoreo inteligente para el control del proceso de tueste de café.</p>
-        <p>contacto@smartroast.com | Córdoba, Argentina</p>
-        <p>Desarrollado por Argentis Developers | © 2026 Todos los derechos reservados</p>
-    </footer>
+    <div id="footer-container"></div>
 
-    
     <script src="../script.js"></script>
+    <script src="../carrito.js"></script>
+    <script>
+        inyectarComponente('header-container', '../Assets/components/headerin.html');
+        inyectarComponente('footer-container', '../Assets/components/footer.html');
+    </script>
 
 </body>
 </html>
