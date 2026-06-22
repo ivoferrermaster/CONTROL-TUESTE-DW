@@ -40,6 +40,14 @@
     padding: 8px 15px;
     border-radius: 5px;
 }
+
+.menu-boton:hover{
+    background-color: #d84215c4;
+    border-left: 5px solid #d84315;
+    transform: translateX(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+}
 .pie-pagina {
     background-color: #3e2723;
     color: #d7ccc8;
