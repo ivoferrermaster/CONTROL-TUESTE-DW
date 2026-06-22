@@ -39,3 +39,44 @@ function inyectarComponente(idContenedor, rutaArchivo) {
             .catch(error => console.error("Error inyectando componente:", error));
     }
 }
+
+//FUNCIONES DE LAS PREGUNTAS
+function mostrar() {
+    let rep = document.getElementById("rep1");
+
+    if (rep.style.display === "none" || rep.style.display === "") {
+        rep.style.display = "block";
+    } else {
+        rep.style.display = "none";
+    }
+}
+
+function mostrar2() {
+    let rep = document.getElementById("rep2");
+
+    if (rep.style.display === "none" || rep.style.display === "") {
+        rep.style.display = "block";
+    } else {
+        rep.style.display = "none";
+    }
+}
+
+function mostrar3() {
+    let rep = document.getElementById("rep3");
+
+    if (rep.style.display === "none" || rep.style.display === "") {
+        rep.style.display = "block";
+    } else {
+        rep.style.display = "none";
+    }
+}
+
+function mostrar4() {
+    let rep = document.getElementById("rep4");
+
+    if (rep.style.display === "none" || rep.style.display === "") {
+        rep.style.display = "block";
+    } else {
+        rep.style.display = "none";
+    }
+}

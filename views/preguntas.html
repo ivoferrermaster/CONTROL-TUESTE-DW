@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas frecuentes</title>
+    <title>Preguntas Frecuentes</title>
     <link rel="stylesheet" href="../style/preguntas.css">
-
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../Assets/components/comp.css">
+    <link rel="stylesheet" href="../style/Carrito.css">
 </head>
 <body>
+
+    <div id="header-container"></div>
+
     <section>
         <h2>Preguntas Frecuentes</h2>
 
-        <h3>¿Cuanto tarda el servicio tecnico?</h3>
-        <p>El tiempo de respuesta es de 24 a 48 hs habiles.</p>
+        <h3 onclick="mostrar('rep1')">¿Cuánto tarda el servicio técnico?</h3>
+            <p id="rep1" style="display:none;">
+                El tiempo de respuesta es de 24 a 48 hs hábiles.
+            </p>
 
-        <h3>¿Las maquinas tienen grarantias?</h3>
-        <p>Si, todas nuestras cuentan con garantia oficial.</p>
+        <h3 onclick="mostrar2('rep2')">¿Las máquinas tienen garantías?</h3>
+            <p id="rep2" style="display:none;">
+                Sí, todas nuestras máquinas cuentan con garantía oficial.
+            </p>
 
-        <h3>¿Donde puedo descargar los manuales tecnicos?</h3>
-        <p>Los manuales se encuentran disponibles en la seccion Inicio.</p>
+        <h3 onclick="mostrar3('rep3')">¿Dónde puedo descargar los manuales técnicos?</h3>
+            <p id="rep3" style="display:none;">
+                Los manuales se encuentran disponibles en la sección Inicio.
+            </p>
 
-        <h3>¿Realizan mantenimientos preventivos?</h3>
-        <p>Si, ofrecemos planes de mantenimientos para empresas y cafeterias.</p>
-
+        <h3 onclick="mostrar4('rep4')">¿Realizan mantenimientos preventivos?</h3>
+            <p id="rep4" style="display:none;">
+                Sí, ofrecemos planes de mantenimiento para empresas y cafeterías.
+            </p>
         <hr>
 
         <p>¿No encontraste la respuesta que buscabas?</p>
-        <a href="soporte.html"></a>
-        <button>Contactar soporte tecnico</button>
+
+        <div class="campo">
+            <a href="soporte.html" class="boton-volver">
+                Volver a soporte técnico
+            </a>
+        </div>
     </section>
-    
+
+    <div id="footer-container"></div>
+
+    <script src="../script.js"></script>
+    <script src="../carrito.js"></script>
+    <script>
+        inyectarComponente('header-container', '../Assets/components/headerin.html');
+        inyectarComponente('footer-container', '../Assets/components/footer.html');
+    </script>
+
 </body>
 </html>
