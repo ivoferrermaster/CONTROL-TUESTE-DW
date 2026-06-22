@@ -147,3 +147,14 @@ body {
 .boton-rojo:hover {
     background-color: #b71c1c;
 }
+
+.caja-equipo{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.fila-superior{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
